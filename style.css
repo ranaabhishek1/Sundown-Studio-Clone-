@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: main1;
+    src: url(fonts/NeueHaasDisplay-Roman.woff);
+}
+
+
+@font-face {
+    font-family: main2;
+    src: url(fonts/NeueHaasDisplay-Mediu.woff);
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: main1;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+}
+
+nav{
+    padding: 2vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4{
+    padding: 10px 20px;
+    border: 1px solid #888888a0;
+    color: #000000c6;
+    border-radius: 50px;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.4s;
+overflow: hidden;
+cursor: pointer;
+}
+
+#nav-part2 h4::after{
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background-color:black;
+left: 0;
+bottom: -100%;
+border-radius: 50%;
+transition: all ease 0.4s;
+}
+
+
+#nav-part2 h4:hover::after{
+bottom: 0;
+border-radius: 0;
+
+
+}
+
+#nav-part2 h4 a{
+    text-decoration: none;
+    color: #000000bb;
+    z-index: 9;
+    position: relative;
+}
+
+#nav-part2 h4:hover a{
+    color: #fff;
+}
+
+#nav-part2 h4 a:hover{
+    color: #fff;
+}
+
